@@ -36,9 +36,9 @@ fi
 if ! command -v ss-server &> /dev/null 
 then
 	echo "Update apt repository"
-	apt update
+	apt -y update
     	echo "\"ss-server\" could not be found, so it's going to install"
-    	apt install shadowsocks-libev
+    	apt -y install shadowsocks-libev
 else
      	echo "\"ss-server\" already exist."	
 fi
@@ -146,6 +146,14 @@ echo
 
 
 # create config file
+
+if ! command -v jq &> /dev/null
+then
+        echo "Install jq for create json file"
+        apt -y install jq
+fi
+
+
 jq -n \
     --arg server "$SS_SERVER_ADDR" \
     --arg server_port "$SS_PORT" \
