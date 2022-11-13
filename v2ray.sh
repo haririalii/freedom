@@ -24,7 +24,7 @@ then
 fi
 
 # create working directory
-if [ ! -n $V2R_DIR ]
+if [ ! -d $V2R_DIR ]
 then
 	echo "Create working directory [$V2R_DIR]"
 	mkdir -p $V2R_DIR
@@ -39,7 +39,7 @@ cd $V2R_DIR
 
 
 # clone project from git repository
-if [ ! -n $PROJECT_GIT_NAME ]
+if [ ! -d $PROJECT_GIT_NAME ]
 then
 	echo "Clone project [$PROJECT_GIT_ADDR] ..."
 	git clone $PROJECT_GIT_ADDR
