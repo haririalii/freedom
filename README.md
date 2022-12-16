@@ -8,7 +8,7 @@ First, make scripts executable:
 ```bash
 chmod +x ss-server.sh v2ray.sh
 ```
-then, run the script:
+then, run the script (as root):
 ```bash
 ./ss-server
 ```
