@@ -2,7 +2,7 @@
 Shadowsocks + v2ray plugin (HTTP) installation script. One of the rare ways to bypass the Iranian government's internet censorship
 > According to the [v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin), HTTP only provides moderate (but lightweight) traffic obfuscation. Cautious users should refrain from using this mode.
 # Requirement:
-+ Ubuntu server 16.04+
++ Ubuntu server
 # Installation and usage:
 First, make scripts executable:
 ```bash
