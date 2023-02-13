@@ -1,5 +1,7 @@
 # FREEDOM
-Shadowsocks + v2ray plugin (HTTP) installation script. One of the rare ways to bypass the Iranian government's internet censorship
+Shadowsocks + v2ray plugin (HTTP) installation script.
+> Currently not work in Iran
+
 > According to the [v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin), HTTP only provides moderate (but lightweight) traffic obfuscation. Cautious users should refrain from using this mode.
 # Requirement:
 + Ubuntu server
